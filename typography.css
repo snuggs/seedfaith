@@ -1,0 +1,259 @@
+/*
+  - https://zellwk.com/blog/why-vertical-rhythms
+  - http://mikeyanderson.com/optimal_characters_per_line
+  - https://pearsonified.com/2011/12/golden-ratio-typography.php
+*/
+
+:root {
+
+  --tab-size: 4;
+
+  --font-size: 2.8vw;
+
+  --text-align: center;
+
+  --margin: 0.67em 2.0vw;
+
+  --line-height: 1.612em;
+
+  --text-size-adjust: 100%;
+
+  --letter-spacing: -0.02em;
+
+  --p-margin: 0 1.4em 1.612em;
+
+  --font-family:
+    system-ui,
+    -apple-system,       /* macOS 10.11-10.12 */
+    'segoe ui',          /* Windows 6+ */
+    roboto,              /* Android 4+ */
+    ubuntu,              /* Ubuntu 10.10+ */
+    cantarell,           /* Gnome 3+ */
+    'noto sans',         /* KDE Plasma 5+ https://mail.kde.org/pipermail/distributions/2017-November/000258.html */
+    sans-serif,          /* fallback */
+    'Apple Color Emoji', /* macOS emoji */
+    'Segoe UI Emoji',    /* Windows emoji */
+    'Segoe UI Symbol',   /* Windows emoji */
+    'Noto Color Emoji';  /* Linux emoji */
+
+  --font-family-mono:
+    menlo,               /* macOS 10.10+ */
+    consolas,            /* Windows 6+ */
+    'Roboto Mono',       /* Android 4+ */
+    'Ubuntu Monospace',  /* Ubuntu 10.10+ */
+    'Noto Mono',         /* KDE Plasma 5+ */
+    'Oxygen Mono',       /* KDE Plasma 4+ */
+    'Liberation Mono',   /* Linux/OpenOffice fallback */
+    monospace;           /* fallback */
+
+  /* Margin collapse bugfix:
+   *   - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing
+   *   - https://medium.com/fed-or-dead/margin-collapse-or-why-your-child-element-is-moving-the-parent-b199a0b60497
+   */
+  --margin-collapse-bugfix: 0.02px
+}
+
+@media screen and (min-width: 786px) {
+  :root {
+
+    --font-size: 2.2vw;
+
+    --text-align: left;
+
+    --margin: .67em 6vw
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+
+    --font-size: 1.5vw;
+    
+    --text-align: left;
+
+    --margin: .67em 6vw
+  }
+}
+
+::-moz-selection /* set separately */
+  { text-shadow: none }
+::selection
+  { text-shadow: none }
+
+body :not(a), *,
+::before, *:before,
+::after,  *:after
+  /* https://stackoverflow.com/questions/7327326/what-is-the-difference-between-before-and-before */
+  { text-decoration: inherit }
+
+html {
+  font-size:      var(--font-size);
+  text-align:     var(--text-align);
+  font-family:    var(--font-family);
+  line-height:    var(--line-height);
+  letter-spacing: var(--letter-spacing);
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/tab-size */
+  -moz-tab-size:  var(--tab-size);
+       tab-size:  var(--tab-size);
+  /* Prevent adjustments of font size after orientation changes in iOS.
+   * https://developer.mozilla.org/en-US/docs/Web/CSS/text-size-adjust */
+  -webkit-text-size-adjust: var(--text-size-adjust);
+          text-size-adjust: var(--text-size-adjust);
+  
+  font-stretch: normal;
+  font-variant: normal;
+  font-size-adjust: 0.5;
+  word-break:  break-word;
+  unicode-range: U+0-10FFFF;
+  font-feature-settings: normal
+}
+
+html * {
+  margin:  0 0 var(--margin-collapse-bugfix);
+  padding: var(--margin-collapse-bugfix) 0 0;
+}
+
+body { }
+
+
+/* LANDMARKS */
+
+[role=banner] {
+  outline: 0.3em dashed currentColor;
+}
+
+[role=banner] a[target=_top] {
+  display: block;
+  background: currentColor url(index.png) no-repeat left;
+
+  font-size: 3em;
+  line-height: 2em;
+  margin-bottom: 0.2em;
+}
+
+[role=search] {
+  text-align: right;
+  outline: 0.3em dashed currentColor;
+}
+
+body > main {
+  outline: 0.3em dashed currentColor;
+}
+
+body > aside {
+  width:  90%;
+  margin: 0 auto 1em;
+  outline: 0.3em dashed currentColor;
+}
+
+body > footer {
+  text-align: center;
+  outline: 0.3em dashed currentColor;
+}
+
+body > *, body > header > p
+  { margin: var(--margin) }
+
+a:hover
+  { text-decoration: underline }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  margin: var(--margin);
+
+  font-size:   2em;
+  line-height: 1.12em
+}
+h1, h2, h3, h4, h5, h6, header {
+  font-weight: bold;
+  margin: var(--margin);
+  text-shadow: 0.05em 0.05em 0.2em var(--shadow);
+}
+header {
+  font-size: 120%;
+}
+
+b, strong
+  { font-weight: bolder }
+p
+  { margin: var(--p-margin) }
+
+cite
+  { font-size: 80% }
+
+cite::before
+  { content: '—' /* https://en.wikipedia.org/wiki/Dash */ }
+q
+  { font-style: italic }
+
+ul, ol {
+  margin: auto auto auto 2em;
+  list-style-position: inside
+}
+
+abbr[title] {
+  text-decoration: underline;
+  text-decoration: underline dotted
+}
+
+nav ol, nav ul
+  { list-style: none }
+
+body del, body s {
+  opacity: 0.5;
+  text-decoration: line-through
+}
+blockquote::before
+{
+  background: red;
+  display: block;
+  width: 1em;
+  padding: 0;
+  content: "\201C";
+  left: -20px;
+  top: -20px;
+}
+
+del::before, ins::before
+  { font-family: var(--font-family-mono) }
+
+del::before
+  { content: '−' /* https://en.wikipedia.org/wiki/Dash */ }
+
+ins::before
+  { content: '+' }
+  
+small
+  { font-size: 80% }
+
+pre, code, kbd, samp {
+  font-size:   var(--font-size);
+  font-family: var(--font-family-mono)
+}
+
+button, input, select, textarea {
+  margin:      0; /* Safari */
+  font-size:   inherit;
+  line-height: inherit;
+  font-family: inherit
+}
+
+button {
+  overflow:       visible; /* Show the overflow in IE. */
+  text-transform: none     /* Remove the inheritance of text transform in Edge, Firefox, and IE. */
+}
+
+table {
+  width: 96%;
+  margin: 0 auto 1.612em;
+  outline: 0.4em double var(--color);
+  box-shadow: 0.4em 0.4em 0.8em var(--shadow);
+}
+
+table thead {
+  background: var(--color);
+  color: var(--background-color);
+}
