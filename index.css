@@ -216,3 +216,8 @@ a[href*=youtube]::before {
   border-radius: .3em;
   text-shadow: 0.1em 0.1em 0 rgb(10,10,10,0.8)
 }
+
+
+main ol {
+  font-size: 2em;
+}
