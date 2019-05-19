@@ -1,0 +1,59 @@
+:root {
+  --background-color: rgba(10,10,10, 0.8);
+  --color:            rgba(240,240,240, 0.8);
+  --lightest-color:   rgba(255,255,255,0.9);
+  --lighter-color:    rgba(245,245,245,0.8);
+  --darker-color:     rgba(200,200,200, 0.8);
+  --darkest-color:    rgba(180,180,180, 0.7);
+  --a:                rgba(231,47,188,0.8);
+  --a\:hover:         rgba(231,47,188,1.0);
+  --shadow:           rgba(10, 10, 10, 0.9)
+}
+
+/* ----------------------------------------------------- */
+
+/* https://css-tricks.com/almanac/selectors/s/selection/ */
+::-moz-selection {
+  color: var(--background-color);
+  background-color: var(--color)
+}
+
+::selection {
+  color: var(--background-color);
+  background-color: var(--color)
+}
+
+::backdrop
+  /* https://developer.mozilla.org/en-US/docs/Web/CSS/::backdrop */
+  { background-color: var(--background-color) }
+
+html {
+  color:            var(--color);
+  background-color: var(--background-color)
+}
+
+hr { /* https://www.lifewire.com/styling-horizontal-rule-tag-3466399 */
+  color:            var(--color);
+  background-color: currentColor
+}
+
+a:link,
+a:active,
+a:visited
+  { color: var(--a) }
+
+a:hover
+  { color: var(--a\:hover) }
+
+legend
+  { color: inherit; /* IE */ }
+
+dialog {
+  color: var(--background-color);
+  background-color: var(--color)
+}
+
+table tr:nth-child(odd) {
+  color: var(--background-color);
+  background-color: var(--color)
+}
