@@ -3,19 +3,19 @@
 
 h1 { font-size: 3em }
 
-figure {
+html body figure {
   width: 80vw;
   height: 80vw;
-  background: red;
   margin: 0 auto 1.612;
 }
 
-figure img { width: 100% }
+figure img { width: 100%;
+border-radius: 60vw;
+ }
 
 figure figcaption {
   display: block;
   text-align: center;
-  background: green;
   font-weight: bold;
   font-size: 2em;
 }
