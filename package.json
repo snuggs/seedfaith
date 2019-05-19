@@ -1,0 +1,23 @@
+{
+  "name": "org.seedfaith",
+  "version": "0.0.1",
+  "description": "Seedfaith Ministry",
+  "main": "index.js",
+  "dependencies": {
+    "now": "^15.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snuggs/seedfaith.git"
+  },
+  "author": "snuggsi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/snuggs/seedfaith/issues"
+  },
+  "homepage": "https://github.com/snuggs/seedfaith#readme"
+}
