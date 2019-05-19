@@ -219,5 +219,8 @@ a[href*=youtube]::before {
 
 
 main ol {
-  font-size: 2em;
+  font-size: 1.5em;
+}
+main ol li {
+  margin: .5em 1em;
 }
