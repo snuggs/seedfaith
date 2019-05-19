@@ -1,23 +1,199 @@
-h1 {
-  font-size: 3em;
-  text-align: center;
+@import 'colors.css';
+@import 'typography.css';
+
+/*
+  - normalize.css
+    https://www.reddit.com/r/webdev/comments/8q269x/is_css_reset_necessary_still_in_2018/
+ 
+  - sanitize.css
+    https://github.com/csstools/sanitize.css/blob/master/sanitize.css
+*/
+
+/* cursors - https://developer.mozilla.org/en-US/docs/Web/CSS/cursor */
+html
+  { cursor: default; }
+abbr[title]
+  { cursor: help; }
+button, [type=submit], [type=button], [type=reset]
+  { cursor: pointer; }
+progress
+  { cursor: progress; }
+[disabled]
+  { cursor: not-allowed; }
+canvas
+  { cursor: none; }
+
+/* boxing */
+html
+  { box-sizing: border-box; }
+
+*, ::before, ::after, *:before, *:after
+  /* https://stackoverflow.com/questions/7327326/what-is-the-difference-between-before-and-before */
+  { box-sizing: inherit; }
+
+::-moz-focus-inner { /* Remove the inner border and padding of focus outlines in Firefox */
+  padding:      0;
+  border-style: none;
 }
 
-figure {
-  width: 80vw;
-  height: 80vw;
-  background: red;
-  margin: 0 auto 1.612;
+:-moz-focusring
+  /* Restore focus outline - https://github.com/necolas/normalize.css/issues/481 */
+  { outline: 1px dotted ButtonText; }
+
+template /* IE custom elements */
+  { display: none; }
+
+article, aside, footer, header, nav, section
+  { display:block }
+
+body > aside  {
+  outline: .5em dashed currentColor;
+  color: var(--background-color);
+  background-color: var(--color);
 }
 
-figure figcaption {
+body > main, body > aside
+  { max-width: 1200px; }
+
+hr { /* https://www.lifewire.com/styling-horizontal-rule-tag-3466399 */
+  height: .15em;
+  overflow: visible;
+  margin-top: 3.612em;
+  margin-bottom: 3.612em;
+}
+
+/* media.css */
+img
+  { width: 100%; height: auto; }
+
+canvas {
+  display: inline-block;
+  outline: 1px solid var(--color);
+}
+
+audio, canvas, iframe, img, svg, video {
+  vertical-align: middle;
+  margin: 0 auto 1.612em;
+}
+
+table
+  { border-collapse: collapse; }
+
+
+/* forms.css */
+
+button, [type=submit], [type=button], [type=reset]
+{
+  -webkit-appearance: button;
+  appearance:         button;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  -moz-appearance:    button;
+  appearance:         button;
+}
+::-moz-file-upload-button {
+  -webkit-appearance: button;
+  -moz-appearance:    button;
+  appearance:         button;
+}
+
+details
+  { display: block; }
+summary
+  { display: list-item; }
+  
+dialog {
+  left: 0;
+  right: 0;
+  margin: auto;
+  border: solid;
   display: block;
-  text-align: center;
-  background: green;
-  font-weight: bold;
-  font-size: 2em;
+  position: absolute;
+
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content;
 }
 
-figure img {
-  width: 100%;
+dialog:not([open])
+  { display: none }
+
+a, area, button, input, label, select, summary, textarea, [tabindex] {
+  /* Remove tapping delay */
+  -ms-touch-action: manipulation;
+  touch-action:     manipulation
+}
+
+[hidden]
+  { display: none }
+
+/* accessibility.css */
+[aria-busy=true]
+  { cursor: progress }
+
+[aria-controls]
+  { cursor: pointer }
+
+[aria-disabled=true]
+  { cursor: not-allowed }
+
+[aria-hidden="false"][hidden]:not(:focus) {
+  display: inherit;
+  position: absolute;
+  clip: rect(0, 0, 0, 0)
+}
+
+::before, :before
+{
+  white-space: pre;
+  /* https://stackoverflow.com/questions/8820286/how-to-remove-only-underline-from-abefore */
+  display: inline-block;
+  text-decoration: none;
+  vertical-align: baseline
+}
+
+/* icons.css */
+/* URLI Schemes - https://en.wikipedia.org/wiki/Uniform_Resource_Identifier */
+a[href^=mailto]::before
+  { content: '📧' }
+
+a[href^=tel]::before
+  { content: '📞' }
+
+a[href*=twitter]::before
+  { content: '🐦' }
+
+a[href*=instagram]::before
+  { content: '📷' }
+
+a[href*=github]::before
+  { content: '🐙' }
+
+a[href*=facebook]::before {
+  content: 'F';
+  color: #fff;
+  margin: 0 .3em;
+  padding: 0 .3em;
+  font-weight: bold;
+  border-radius: .3em;
+  background: #3b5998;
+  text-shadow: .1em .1em .1em rgb(10,10,10,0.4)
+ }
+
+a[href*=youtube]::before {
+  content: '►';
+  color: #fff;
+  margin: 0 .3em;
+  padding: 0 .6em;
+  font-size: 0.7em;
+  font-weight: bold;
+  line-height: 1.7em;
+  background: #f00;
+  border-radius: .3em;
+  text-shadow: 0.1em 0.1em 0 rgb(10,10,10,0.8)
 }
