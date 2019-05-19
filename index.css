@@ -1,6 +1,25 @@
 @import 'colors.css';
 @import 'typography.css';
 
+h1 { font-size: 3em }
+
+figure {
+  width: 80vw;
+  height: 80vw;
+  background: red;
+  margin: 0 auto 1.612;
+}
+
+figure img { width: 100% }
+
+figure figcaption {
+  display: block;
+  text-align: center;
+  background: green;
+  font-weight: bold;
+  font-size: 2em;
+}
+
 /*
   - normalize.css
     https://www.reddit.com/r/webdev/comments/8q269x/is_css_reset_necessary_still_in_2018/
