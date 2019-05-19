@@ -1,0 +1,9 @@
+figure {
+  width: 80vw;
+  height: 80vw;
+  background: red;
+}
+
+figure img {
+  width: 100%;
+}
