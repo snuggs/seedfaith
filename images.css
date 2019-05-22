@@ -6,8 +6,9 @@
   --background-image: url(ocean.jpg);
 }
 
-figure img { width: 100%;
-border-radius: 60vw;
+figure img {
+  width: 40%;
+  border-radius: 60vw;
  }
 
 figure#jean img { }
