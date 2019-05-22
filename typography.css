@@ -56,7 +56,7 @@
   --margin-collapse-bugfix: 0.02px
 }
 
-@media print {
+@media only print {
   :root {
     --column-count: 3;
     --font-size: 0.6vw;
