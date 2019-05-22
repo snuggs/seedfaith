@@ -14,7 +14,8 @@ html {
 h1 { font-size: 3em }
 
 html body figure {
-  width: 80vw;
+  width: 30vw;
+  display: block;
   margin: 0 auto 1.612 !important;
 }
 
