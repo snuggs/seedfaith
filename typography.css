@@ -196,8 +196,7 @@ ul, ol {
 nav ol, nav ul
   { list-style: none }
 
-main ol, main ul
-  { list-style: none }
+main ol, main ul { }
 
 abbr[title] {
   text-decoration: underline;
