@@ -113,7 +113,7 @@ html * {
   padding: var(--margin-collapse-bugfix) 0 0;
 }
 
-body { }
+body { margin-bottom: 10em }
 
 
 /* LANDMARKS */
