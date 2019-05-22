@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media print , screen and (min-width: 1200px) {
   :root {
     --column-count: 3;
     --font-size: 0.6vw;
