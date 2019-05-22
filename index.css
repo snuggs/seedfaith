@@ -27,7 +27,8 @@ figure figcaption {
   font-size: 2em;
   display: block;
   font-weight: bold;
-  font-size: 2em;
+  text-align: center;
+  margin: 0 auto 1.612em;
 }
 
 /*
