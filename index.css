@@ -16,7 +16,7 @@ h1 { font-size: 3em }
 html body figure {
   width: 80vw;
   height: 80vw;
-  margin: 0 auto 1.612;
+  margin: 0 auto 1.612 !important;
 }
 
 figure img { width: 100%;
