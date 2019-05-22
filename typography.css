@@ -56,6 +56,13 @@
   --margin-collapse-bugfix: 0.02px
 }
 
+@media print {
+  :root {
+    --column-count: 3;
+    --font-size: 0.6vw;
+  }
+}
+
 @media screen and (min-width: 786px) {
   :root {
     --column-count: 2;
