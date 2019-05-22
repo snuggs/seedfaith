@@ -136,10 +136,6 @@ body { margin-bottom: 10em }
   outline: 0.3em dashed currentColor;
 }
 
-body > main {
-  outline: 0.3em dashed currentColor;
-}
-
 body > aside {
   width:  90%;
   margin: 0 auto 1em;
