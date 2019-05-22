@@ -238,8 +238,8 @@ a[href*=youtube]::before {
 }
 
 main ol, main ul {
-  column-count: 3;
   font-size: 1.5em;
+  column-count: var(--column-count);
 }
 
 main ol li, main ul li {
