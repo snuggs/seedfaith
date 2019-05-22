@@ -1,4 +1,7 @@
 :root {
-  --background-image:
-    url(ocean.jpg);
+  --background-size: cover;
+  --background-position: 0 0;
+  --background-attachment: fixed;
+  --background-repeat: no-repeat;
+  --background-image: url(ocean.jpg);
 }
