@@ -193,6 +193,12 @@ ul, ol {
   text-shadow: 1px 1px 1px rgb(220,220,220,0.8);
 }
 
+nav ol, nav ul
+  { list-style: none }
+
+main ol, main ul
+  { list-style: none }
+
 abbr[title] {
   text-decoration: underline;
   text-decoration: underline dotted
