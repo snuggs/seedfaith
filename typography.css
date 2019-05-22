@@ -75,7 +75,7 @@
 @media print , screen and (min-width: 1200px) {
   :root {
     --column-count: 3;
-    --font-size: 0.6vw;
+    --font-size: 1vw;
     --text-align: left;
     --margin: .67em 6vw
   }
