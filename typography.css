@@ -193,7 +193,8 @@ ul, ol {
   text-align: left;
   font-weight: bold;
   margin: auto auto auto 2em;
-  list-style-position: inside
+  list-style-position: outside;
+  text-shadow: 1px 1px 1px rgb(220,220,220,0.8);
 }
 
 abbr[title] {
