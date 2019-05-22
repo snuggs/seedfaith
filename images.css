@@ -5,3 +5,11 @@
   --background-repeat: no-repeat;
   --background-image: url(ocean.jpg);
 }
+
+figure img { width: 100%;
+border-radius: 60vw;
+ }
+
+figure#jean img {
+
+}
