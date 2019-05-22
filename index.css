@@ -18,10 +18,6 @@ html body figure {
   margin: 0 auto 1.612 !important;
 }
 
-figure img { width: 100%;
-border-radius: 60vw;
- }
-
 figure figcaption {
   font-size: 2em;
   display: block;
