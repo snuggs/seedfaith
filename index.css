@@ -3,10 +3,12 @@
 @import 'typography.css';
 
 html {
-  background-image:
-    var(--background-image);
-  background-attachment: fixed;
-  background-size: cover;
+  background:
+    var(--background-image)
+    var(--background-repeat)
+    var(--background-position)
+  / var(--background-size)
+    var(--background-attachment)
 }
 
 h1 { font-size: 3em }
