@@ -59,7 +59,7 @@
 @media only print {
   :root {
     --column-count: 3;
-    --font-size: 0.6vw;
+    --font-size: .3em;
   }
 }
 
