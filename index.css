@@ -5,6 +5,7 @@
 html {
   background-image:
     var(--background-image);
+  background-attachment: fixed;
 }
 
 h1 { font-size: 3em }
