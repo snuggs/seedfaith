@@ -11,7 +11,7 @@ html {
     var(--background-attachment)
 }
 
-h1 { font-size: 3em }
+h1 {font-size: 6em;}
 
 html body figure {
   width: 100%;
