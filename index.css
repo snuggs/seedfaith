@@ -1,5 +1,11 @@
 @import 'colors.css';
+@import 'images.css';
 @import 'typography.css';
+
+html {
+  background-image:
+    var(--background-image);
+}
 
 h1 { font-size: 3em }
 
