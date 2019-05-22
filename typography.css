@@ -190,6 +190,7 @@ q
   { font-style: italic }
 
 ul, ol {
+  text-align: left;
   font-weight: bold;
   margin: auto auto auto 2em;
   list-style-position: inside
