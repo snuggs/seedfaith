@@ -163,17 +163,19 @@ a:hover
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
  */
-h1 {
+h1, h2, h3, h4, h5, h6, header {
   margin: var(--margin);
 
-  font-size:   2em;
+  font-weight: bold;
+  text-shadow: 0.05em 0.05em 0.2em var(--shadow);
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size:   6em;
   text-align: center;
   line-height: 1.12em;
-}
-h1, h2, h3, h4, h5, h6, header {
-  font-weight: bold;
-  margin: var(--margin);
-  text-shadow: 0.05em 0.05em 0.2em var(--shadow);
+  font-family: 'Seaweed Script', cursive;
 }
 header {
   font-size: 120%;
