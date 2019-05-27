@@ -159,7 +159,6 @@ body > aside {
 
 body > footer {
   text-align: center;
-  outline: 0.3em dashed currentColor;
 }
 
 body > *, body > header > p
