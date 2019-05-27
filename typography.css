@@ -140,7 +140,16 @@ html { padding-bottom: 10em }
 
 [role=search] {
   text-align: right;
-  outline: 0.3em dashed currentColor;
+}
+
+body {
+  width:  2550px;
+  margin: 0 auto 1em;
+}
+
+body > main {
+  width:  2000px;
+  margin: 0 auto 1em;
 }
 
 body > aside {
