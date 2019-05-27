@@ -215,7 +215,7 @@ nav ol, nav ul
 
 main ol, main ul { padding-bottom: 4em; }
 main ol li, main ul li {
-  line-height: 2em;
+  line-height: 1.8em;
  }
 
 abbr[title] {
