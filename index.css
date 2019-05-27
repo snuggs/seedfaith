@@ -4,6 +4,7 @@
 
 html {
   background:
+    var(--background-color)
     var(--background-image)
     var(--background-repeat)
     var(--background-position)
