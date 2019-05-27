@@ -2,6 +2,7 @@
   --background-size: contain;
   --background-position: 0 0;
   --background-repeat: no-repeat;
+  --background-attachment: scroll;
   --background-image: url(ocean.jpg);
 }
 
