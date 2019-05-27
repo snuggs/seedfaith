@@ -207,6 +207,9 @@ nav ol, nav ul
   { list-style: none }
 
 main ol, main ul { padding-bottom: 4em; }
+main ol li, main ul li {
+  line-height: 2em;
+ }
 
 abbr[title] {
   text-decoration: underline;
