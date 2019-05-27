@@ -84,11 +84,7 @@ body > main, body > aside
   { max-width: 2300px; }
 
 body > main {
-  background-image:
-    linear-gradient(
-      rgba(250,250,250,0),
-      rgba(250,250,250,1.0)
-    );
+  background-image: var(--linear-gradient);
 
   border-radius: 1em;
 }
