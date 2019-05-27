@@ -81,7 +81,7 @@ body > aside  {
 }
 
 body > main, body > aside
-  { max-width: 2550px; }
+  { max-width: 2300px; }
 
 body > main {
   background-image:
